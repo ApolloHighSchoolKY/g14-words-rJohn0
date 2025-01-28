@@ -25,13 +25,13 @@ public class Word
 	public int getNumVowels()
 	{
 		int count = 0;
-		char peter;
+		
 	//Loop for every letter in "word"
 		//Use indexOf to see if the letter is in the string "vowels"
 		for (int i = 0; i < word.length(); i++)
 		{
-			peter = word.charAt(i);
-			if(VOWELS.indexOf(peter) > -1)
+		
+			if(VOWELS.indexOf(word.substring(i,i+1)) > -1)
 			{
 				count++;
 			} 
